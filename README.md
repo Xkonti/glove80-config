@@ -1,8 +1,6 @@
 # My ZMK config for the MoErgo Glove80
 
-![Photo](img/glove80_photo.png)
-
-Based on [MoErgo's template](https://github.com/moergo-sc/glove80-zmk-config) and [Gaétan Lepage's flake](https://github.com/GaetanLepage/glove80-zmk-config).
+Based on [MoErgo's template](https://github.com/moergo-sc/glove80-zmk-config) and [Gaétan Lepage's flake](https://github.com/GaetanLepage/glove80-zmk-config) and [Moosy Research TailorKey](https://sites.google.com/view/keyboards/glove80_tailorkey).
 
 This repo contains the current config for my Glove80 keyboard.
 The keymap was initially built using MoErgo's [Layout Editor](https://my.glove80.com),
@@ -16,40 +14,40 @@ The keyboard firmware can be built locally using `nix`, which is also used for [
 
 ### Base Layers
 
-The default base layer uses Colemak DH. Some punctuation is moved around using Mod Morphs, and useful stuff is placed on the thumb keys.
+![Default](img/glove80_HRM_WinLinx.svg)
 
-![Default](img/glove80_default.svg)
+There's also AutoShift and Typing (no home row mods) layer:
 
-There is a secondary Qwerty base layer available as a fallback:
+![AutoShift](img/glove80_Autoshift.svg)
 
-![Qwerty](img/glove80_qwerty.svg)
-
-### Gaming
-
-A gaming layer extends Qwerty, shifting WASD to a more comfortable position.
-
-![Gaming](img/glove80_gaming.svg)
+![Typing](img/glove80_Typing.svg)
 
 ### Symbols
 
-Readily accessible from a thumb key, the symbols layer attempts to find comfortable positions for commonly used programming symbols.
+![Symbols](img/glove80_Symbols.svg)
 
-![Symbols](img/glove80_symbols.svg)
+### Numbers
 
-### Numbers & Navigation
+![Numbers](img/glove80_Numbers.svg)
 
-Also on the thumb keys, a nav layer has a comfortable numpad and navigation keys.
+### Cursor
 
-![Numbers & Navigation](img/glove80_navigation.svg)
+![Cursor](img/glove80_Cursor.svg)
 
-I may consider switching from a numpad layout to a 2x 4-finger numrow in an attempt to keep everything closer to the home row. Alternatively, moving the `0` key up may have the same effect.
+### Mouse
+
+![Mouse](img/glove80_Mouse.svg)
 
 ### MoErgo's Magic Layer
 
 As standard on all Glove80 keyboards, a Magic layer provider access to system utilities, such as Bluetooth settings and RGB lighting config.
 
 ![Magic Layer](img/glove80_magic.svg)
- 
+
+### Gaming
+
+![Gaming](img/glove80_Gaming.svg)
+
 ## Setup
 
 ### Flashing Firmware
@@ -91,7 +89,7 @@ See the [user guide](https://docs.moergo.com/glove80-user-guide/customizing-key-
 
 ![Activating bootloader](https://docs.moergo.com/glove80-user-guide/images/bootloader-power-up-method.png)
 
-#### You can tell if a Glove80 half is in bootloader mode using the red LED next to the power switch:
+#### You can tell if a Glove80 half is in bootloader mode using the red LED next to the power switch
 
 - Slow LED: in bootloader mode and connected via USB.
 - Fast LED: in bootloader mode but there is no USB connection.
@@ -148,7 +146,6 @@ When tapping the `Magic` key, status indicators will appear on the Bluetooth key
   <strong>Not paired</strong>
 </p>
 
-
 #### Pairing
 
 - First ensure the profile is unpaired (white status LED)
@@ -159,8 +156,8 @@ When tapping the `Magic` key, status indicators will appear on the Bluetooth key
 
 Unpair the selected Bluetooth profile using the `BT_Clear` key (see [magic layer] above). Alternatively unpair all devices using `BT_Clear_All`.
 
-
 ## Resources
+
 - [@nickcoutsos]'s [Keymap Editor] ([webapp](https://nickcoutsos.github.io/keymap-editor)).
 - [@caksoylar]'s [Keymap Drawer].
 
@@ -168,6 +165,8 @@ Unpair the selected Bluetooth profile using the `BT_Clear` key (see [magic layer
 - [Glove80 Troubleshooting](https://docs.moergo.com/troubleshooting-faqs/).
 - MoErgo's [Glove80 Support](https://moergo.com/glove80-support) page.
 - MoErgo's [Discord Server](https://moergo.com/discord).
+
+- [Moosy Research TailorKey](https://sites.google.com/view/keyboards/glove80_tailorkey).
 
 - [ZMK Documentation](https://zmk.dev/docs).
 - ZMK's [Discord Server](https://discord.gg/8cfMkQksSB).
